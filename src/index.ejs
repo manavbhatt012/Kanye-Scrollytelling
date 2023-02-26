@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link the main css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link the main js file -->
+    <script type="module" src="js/app.js" defer></script>
+</head>
+<body>
+       
+        <!-- scrolly -->
+        <section id="doge-scrolly">
+
+        <!-- define the scroll sections -->
+        <% const blocks=
+            [
+            { 
+                "filename" : "doge_1" , 
+                "anno" : "_blank-slide_"  
+            },
+            { 
+                "filename" : "doge_2" , 
+                "anno" : "He changed music and is arguably the most influential artist alive. He started off as a producer but wanted to rap. A lot of people were skeptical, but he comes out with the critically Soul influenced (he loved using soul samples turning it into “chipmunk soul”) The College Dropout. Then Late Registration which hits too in 2005 ." 
+            },
+            { 
+                "filename" : "doge_3" , 
+                "anno" : "At that time “All the Right Reasons” is the fifth studio album by Canadian rock band Nickelback was the number one album with 19,000,000 sales." 
+            },
+            { 
+                "filename" : "doge_5" , 
+                "anno" : "Late Registration is Kanye West's second album, and it has sold over 5,387,517 copies, making it the 15th best-selling album of all time." 
+            },
+            { 
+                "filename" : "doge_6" , 
+                "anno" : "After going through a really low period during 2008 in his life (death of his mother, first engagement being broken) he makes an album where he doesn’t rap. 808s & Heartbreak, it’s credited for how melodic rap is today." 
+            },
+            { 
+                "filename" : "doge_7" , 
+                "anno" : "808S & HEARTBREAK by KANYE WEST has sold 3,450,000 copies in 6 countries. The album sold best in United States (3,000,000 copies), United Kingdom (300,000 copies) and Canada (80,000 copies)." 
+            },
+            { 
+                "filename" : "doge_8" , 
+                "anno" : "_blank-slide_" 
+            },
+            { 
+                "filename" : "doge_9" , 
+                "anno" : "MY BEAUTIFUL DARK TWISTED FANTASY by KANYE WEST has sold 3,588,000 copies in Australia, Canada, Denmark, United Kingdom and United States." 
+            },
+            { 
+                "filename" : "doge_10" , 
+                "anno" : "Till now KANYE WEST sold over 35,746,884 albums, including 30,000,000 in the United States and 3,220,000 in the United Kingdom. The best-selling album by KANYE WEST is GRADUATION, which sold over 6,060,563 copies ." 
+            }
+            ] 
+        %>
+        <!-- every { filename, anno } object makes a new section -->
+
+        <!-- include the component -->
+        <%- include('./scrolly/scrolly.ejs', {id: "doge-scrolly" , blocks: blocks }); %>
+        
+        </section>
+</body>
+</html>
